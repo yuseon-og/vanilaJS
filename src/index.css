@@ -1,0 +1,85 @@
+body {
+  background-color: #dff9fb;
+  color: aliceblue;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+  margin-bottom: 3rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(61, 66, 71, 0.5);
+  z-index: -1;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.showinfo {
+  justify-content: center;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.weather {
+  text-align: right;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+}
+.item:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 20px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px rgba(0, 0, 0, 0.75);
+}
+
+#name::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 200;
+}
+
+button {
+  background: none;
+  border: none;
+}
