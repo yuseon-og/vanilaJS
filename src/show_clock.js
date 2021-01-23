@@ -33,7 +33,7 @@ function getYoil(day){
         case 6:
             yoil = "토"
             break;
-        case 7:
+        case 0:
             yoil = "일"
             break;
     }
@@ -47,7 +47,7 @@ function getDate(){
     const dates = date.getDate();
     const days=  getYoil(date.getDay());
     clockDate.innerText=`${years}년 ${months+1}월 ${dates}일 ${days}요일`
-
+    console.log(date.getDay())
 }
 
 
