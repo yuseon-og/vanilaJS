@@ -73,13 +73,35 @@ h1 {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px 25px rgba(0, 0, 0, 0.75);
 }
 
+#name {
+  width: 300px;
+  height: 40px;
+  background: rgba(203, 206, 209, 0.5);
+  border: none;
+  border-radius: 10px;
+  box-shadow: gray;
+}
+
+input {
+  padding-top: 10px;
+}
+
 #name::-webkit-input-placeholder {
   text-align: center;
-  font-size: 10px;
-  font-weight: 200;
+  font-size: 25px;
+  font-weight: 500;
+  color: black;
 }
 
 button {
   background: none;
   border: none;
+}
+
+span {
+  font-size: 25px;
+}
+
+button {
+  font-size: 20px;
 }
