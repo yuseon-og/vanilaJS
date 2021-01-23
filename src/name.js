@@ -21,7 +21,7 @@ function handleSubmit(event){
 function paintGreeting(text){
     getname.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `Hello ${text}`
+    greeting.innerText = `Go get them ${text}!!`
 }
 
 function saveName(user){

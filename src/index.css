@@ -11,6 +11,7 @@ body {
 .showing {
   display: block;
   margin-bottom: 3rem;
+  font-size: 2em;
 }
 
 @keyframes fadeIn {
