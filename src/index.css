@@ -85,6 +85,7 @@ h1 {
 
 input {
   padding-top: 10px;
+  font-size: 25px;
 }
 
 #name::-webkit-input-placeholder {
